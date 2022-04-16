@@ -44,7 +44,7 @@ function drawPanel() {
         fromel.appendChild(rowfrom);
         toel.appendChild(rowto);
     }
-    document.getElementById("export").href = "./dlo.html#" + exportPanel();
+    document.getElementById("export").href = "./index.html#" + exportPanel();
 }
 
 function click(el, x, y) { return () => {
