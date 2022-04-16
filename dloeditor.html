@@ -1,0 +1,17 @@
+<head>
+    <link rel="stylesheet" type="text/css" href="./dlo.css" id="stylesheet">
+    <script async type="text/javascript" src="./dloeditor.js"></script>
+</head>
+<body>
+    <label>width</label>
+    <input id="width" type="number" min="1" step="2" value="5">
+    <label>height</label>
+    <input id="height" type="number" min="1" step="2" value="5">
+    <button class="actual" onclick="gen()">generate</button>
+    <div class="hlist block">
+        <div class="puzzle" id="from"></div>
+        <p>-></p>
+        <div class="puzzle" id="to"></div>
+    </div>
+    <div class="hlist"><a id="export"><button class="actual">export</button></a></div>
+</body>

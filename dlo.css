@@ -1,0 +1,62 @@
+.puzzle {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    border: 2px #444444 solid;
+}
+
+.hlist {
+    display: flex;
+    flex-direction: row;
+    flex: 1 0;
+}
+button {
+    flex: 1 0;
+    min-width: 40px;
+    min-height: 40px;
+    background-color: #FFFFFF;
+    border: 0px transparent solid;
+}
+.answer {
+    background-color: #CCCCCC;
+}
+
+.active {
+    background-color: #888888;
+}
+.disabled, .answer.active {
+    background-color: #444444;
+}
+
+.solved {
+    background-color: #0073ff !important;
+}
+.solved.answer {
+    background-color: #ff0077 !important;
+}
+
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+#lick {
+    width: 100%;
+    text-align: center;
+    position: relative;
+    display: none;
+}
+
+/* editor stuff */
+.actual {
+    flex: 1 0 auto;
+    border: 2px gray solid;
+    border-radius: 4px;
+    padding: 0 32px;
+}
+
+#export, #export button {
+    width: 100%;
+}
+
+.block {
+    margin: 16px;
+}
